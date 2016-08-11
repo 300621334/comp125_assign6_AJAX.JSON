@@ -51,3 +51,4 @@ function backBtn()
 addEventListener("load", function () { readTextFile(filePath); }, false);
 document.getElementById("next").addEventListener("click", function () { clearTimeout(timeOut); populate(); }, false);
 document.getElementById("back").addEventListener("click", backBtn, false);
+document.getElementById("update").addEventListener("click", function () { clearTimeout(timeOut); i = 0; readTextFile(filePath); }, false);
